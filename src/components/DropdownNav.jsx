@@ -3,7 +3,7 @@ import React from 'react';
 const DropdownNav = () => {
     return (
         <>
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown drop">
                 <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                 <div className="dropdown-menu">
                     <a className="dropdown-item" href="#">Action</a>
