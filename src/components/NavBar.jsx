@@ -5,7 +5,6 @@ import ButtonNav from './ButtonNav';
 import logo from '../assets/logo-dario.png'
 
 
-
 function NavBar() {
     return (
         <>
