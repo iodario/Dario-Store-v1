@@ -18,15 +18,12 @@ function NavBar() {
                             <li className="nav-item categorias">
                                 <a className="nav-link" href="google.com">Categorias</a>
                             </li>
-                            
                         </ul>
-                        <Form contBuscar="Productos"/>
-                        <Form contBuscar="Sucursales"/>
-                        {/* <CartWidget style= {{"width": "500px"}} /> */}
+                        <Form contBuscar="Productos" />
+                        <Form contBuscar="Sucursales" />
                         <CartWidget />
 
-
-                    </div>                    
+                    </div>
                 </div>
             </nav>
         </>
