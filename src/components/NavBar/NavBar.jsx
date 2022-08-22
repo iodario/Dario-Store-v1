@@ -1,9 +1,7 @@
-import '../../styles/NavBar.css';
 import Form from './FormNav';
-import ListNav from './ListNav';
-import ButtonNav from './ButtonNav';
+import './NavBar.css';
+import CartWidget from '../CartWidget/CartWidget'
 
-import ItemListContainer from '../ItemListContainer/ItemListContainer'
 
 
 function NavBar() {
@@ -11,15 +9,24 @@ function NavBar() {
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
                 <div className="container-fluid">
-                 <img src='img/logo-dario.png' className="app-logo" alt="logo"/>
-                    <ButtonNav></ButtonNav>
+                    <img src='img/logo-dario.png' className="app-logo" alt="logo" />
                     <div className="collapse navbar-collapse" id="navbarColor01">
-                        <ListNav></ListNav>
-                        <Form contBuscar= "Productos"></Form>
-                        <Form contBuscar= "Sucursales"></Form>
-                        
-                    </div>
-                    <ItemListContainer/>
+                        <ul className="navbar-nav me-auto">
+                            <li className="nav-item">
+                                <a className="nav-link active home" href="google.com">Home</a>
+                            </li>
+                            <li className="nav-item categorias">
+                                <a className="nav-link" href="google.com">Categorias</a>
+                            </li>
+                            
+                        </ul>
+                        <Form contBuscar="Productos"/>
+                        <Form contBuscar="Sucursales"/>
+                        {/* <CartWidget style= {{"width": "500px"}} /> */}
+                        <CartWidget />
+
+
+                    </div>                    
                 </div>
             </nav>
         </>
