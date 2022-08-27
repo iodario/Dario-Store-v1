@@ -1,20 +1,17 @@
 import React from 'react';
 import './ItemListContainer.css';
 
-const ItemListContainer = ({greeting}) => {
-
-    const Productos = ['producto1', 'producto2', 'producto3'];
-    const listaProductos = Productos.forEach(producto => {
+const Productos = ['producto1', 'producto2', 'producto3'];
+const ItemListContainer = () => {
+    const listaProductos = Productos.map((producto) =>(
         <ul>
-            <li>{producto}</li>
+            <li key={producto}>{producto}</li>
         </ul>        
-    });
+    ));
     
-
     return (
         <>
-            {/* {listaProductos} */}
-            <h1>{greeting}</h1>
+            {listaProductos}            
         </>
 
     )
